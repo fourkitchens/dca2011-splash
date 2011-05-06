@@ -14,7 +14,7 @@ _____________________________________________________
 2.HEADINGS
 3.TYPOGRAPHY */
 
-p { margin-bottom : 1.5em; }
+p { margin-bottom: 1em; line-height: 1.75em; }
 
 /*
 4.LINKS
@@ -39,8 +39,8 @@ p { margin-bottom : 1.5em; }
 /* 3.TYPOGRAPHY */
 .league, .chunk { text-shadow: 0 0 0 rgba(0, 0, 0, 0.3) ,1px 1px 0 rgba(255, 255, 255, 0.8); }
 
-.league { font-size: 4.5em; }
-.chunk { font-size: 2.85em; }
+.league { font-size: 2.25em; }
+.chunk { font-size: 1.125em; }
 
 /* 4.LINKS */
 /* 5.FIGURES & IMAGES */
@@ -51,17 +51,22 @@ header { padding: 45px 0px; }
 
 /* 9.NAVIGATION */
 /* 10.CONTENT */
+.content { 
+  padding-top: 30px;
+  margin-bottom: 50px;
+  }
+
 /* 11.MAIN */
 
 .columns {
-  width: 470px;
+  width: 700px;
   margin: 0 auto;
-  padding-top: 30px;
+  text-align: left;
+  position: relative;
 }
 
 figure {
-  margin: 20px 25px;
-  padding: 15px;
+  padding: 10px;
   background-color: #fff; /* non css3 friendly browsers */
   
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#ddd5ce'); /* for IE */
@@ -71,21 +76,12 @@ figure {
   -moz-box-shadow: 0px 0px 9px rgba(128,97,71,0.8);
   -webkit-box-shadow: 0px 0px 9px rgba(128,97,71,0.8);
   box-shadow: 0px 0px 9px rgba(128,97,71,0.8);
+  
+  float: right;
 
   }
   
   figure img { display: inline; }
-
-figcaption.league {
-  font-size: 2em;
-  margin: 10px 0px;
-}
-
-.venue {
-  background-image: url(../img/h/venue.jpg);
-  width: 560px;
-  height: 283px;
-}
 
 
 /* 12.COMPLIMENTARY */
