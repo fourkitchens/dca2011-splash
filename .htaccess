@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_HOST} ^drupalcampaustin\.org$ [NC]
+  RewriteRule ^(.*)$ http://2011.drupalcampaustin.org/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www.drupalcampaustin\.org$ [NC]
+  RewriteRule ^(.*)$ http://2011.drupalcampaustin.org/$1 [L,R=301]
+</IfModule>
