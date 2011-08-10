@@ -63,9 +63,10 @@ html { overflow-y : scroll; }
 
 body { 
 margin : 0 auto;
-font : 100%/1.4 Cambria, Georgia, Times, "Times New Roman";
-color : rgb(64,45,36); 
-background-color : #E0DBC3; }
+padding : 20px;
+font : 100%/1.4 Arial, Helvetica, sans-serif;
+color : rgb(255,255,255); 
+background : #142835 url('../img/main-bg.jpg') center 1px no-repeat; }
 
 /* 2.HEADINGS */
 
@@ -81,9 +82,11 @@ text-align: center;
 }
 
 h1 { 
+font-family: gloriola-web,sans-serif;
 margin-bottom : .75em;
-font-size : 3em; /* 48 / 16 = 3 */
-line-height : 1.2; }
+font-size : 2.1em; /* 35 / 16 = 3 */
+line-height : 1.2;
+color: #d24813; }
 
 h2 { 
 margin-bottom : .75em;
@@ -99,11 +102,6 @@ h4 {
 margin-bottom : 1.25em;
 font-size : 1em; /* 16 / 16 = 1 */ }
 
-h2 {
-  font-family: 'League Gothic';
-  text-transform: uppercase;
-  }
-
 /* 3.TYPOGRAPHY */
 
 p, 
@@ -112,11 +110,6 @@ ul,
 dl, 
 address {  
 font-size : 1em; /* 16 / 16 = 1 */ }
-
-ul, 
-ol { 
-margin : 0 0 1.5em -24px; 
-padding-left : 24px; }
 
 ul { 
 list-style-type : disc; }
@@ -129,6 +122,16 @@ li ol {
 margin : 0;
 font-size : 1em; /* 16 / 16 = 1 */ }
 
+ul.highlights { 
+  list-style: none;
+  font-family: kulturista-web,serif;
+  font-style: normal;
+  font-weight: 600;
+  
+  margin: 0;
+  color: #96c441;
+  }
+
 b, 
 strong	{ 
 font-weight : bold; }
@@ -139,42 +142,26 @@ font-style : italic; }
 
 /* 3.5.WEBFONTS */
 
-@font-face {
-	font-family: 'League Gothic';
-	src: url('../fonts/league-gothic/league_gothic-webfont.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/league-gothic/league_gothic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	     url('../fonts/league-gothic/league_gothic-webfont.woff') format('woff'), /* Modern Browsers */
-	     url('../fonts/league-gothic/league_gothic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-	     url('../fonts/league-gothic/league_gothic-webfont.svg#webfontPRGgo10y') format('svg'); /* Legacy iOS */
-	}
-	
-	.league { font-family: 'League Gothic'; text-transform: uppercase; }
+.gloriola { font-family: gloriola-web,sans-serif; }
+.kulturista { font-family: kulturista-web,serif; }
 
-@font-face {
-	font-family: 'Chunk Five';
-	src: url('../fonts/chunk-five/chunkfive-webfont.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/chunk-five/chunkfive-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	     url('../fonts/chunk-five/chunkfive-webfont.woff') format('woff'), /* Modern Browsers */
-	     url('../fonts/chunk-five/chunkfive-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-	     url('../fonts/chunk-five/chunkfive-webfont.svg#webfontPRGgo10y') format('svg'); /* Legacy iOS */
-	}
-	
-	.chunk { font-family: 'Chunk Five'; text-transform: uppercase; }
-	
-	.league { font-size: 2em; }
-  .chunk { font-size: 1.125em; }
+/*
+font-family: kulturista-web,serif;
+font-style: normal;
+font-weight: 600;
+*/
 
 /* 4.LINKS */
 
 a, 
 a:visited {
 outline : none;
-color : rgb(23,119,175);
+color : #ed9310;
 text-decoration : none; }
  
 a:hover { 
 outline : none;
-color : rgb(40,40,40); 
+color : #fff; 
 text-decoration : underline; }
  
 a:active, 
@@ -184,48 +171,63 @@ color : rgb(0,0,0); }
 
 
 /* 8.BANNER */
-header {
-  background: #e1dcc4 url('../img/top-bg.jpg') top center no-repeat;
-  padding: 10px;
-  text-align: center;
-  
-  -webkit-transition: padding 0.5s ease-in;  
-  -moz-transition: padding 0.5s ease-in;  
-  -o-transition: padding 0.5s ease-in;  
-  transition: padding 0.5s ease-in;
-  }
+header { text-align: center; }
   
 /* 9.NAVIGATION */
 /* 10.CONTENT */
-.content {  background: #e0dbc3 url('../img/main-bg.jpg') center 1px no-repeat; }
 
-figure { 
-  text-align: center;  
-  -webkit-transition: margin 0.5s ease-in;  
-  -moz-transition: margin 0.5s ease-in;  
-  -o-transition: margin 0.5s ease-in;  
-  transition: margin 0.5s ease-in;
+.speech {
+  width: 100%;
+  display: block;
+  clear: both;
+  float: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.bubble { 
+  background-color: #fff;
+  color: #142835;  
+  
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  
+  float: none;
+  width: 280px;
+  margin: 8px auto 15px auto;
+  padding: 15px;
+}
+  .bubble h1 { margin-bottom: 0px; font-size: 1.8em; }
+  
+  .bubble p {
+    font-weight: bold;
+    font-size: 1.1em; /* approx 18 / 16 = 1.1 */
+    line-height: 1.4em;
+    margin-bottom: 5px;
   }
   
-  figure img { display: none; }
+
+.follow {
+  font-family: kulturista-web,serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3em;
+  padding-left: 10px;
+  background: url(../img/tweet.png) 0px 6px no-repeat;
+  width: 300px;
+  margin: 0 auto;
+}  
+
+
+figure {
+  width: 220px;
+  margin: 0 auto;
+  }
 
 /* 11.MAIN */
-.columns { text-align: center; padding-top: 15px; padding-bottom: 50px; }
-
-.venue {
-  margin: 0 auto;
-  background-image: url(../img/venue.jpg);
-  width: 252px;
-  height: 127px;
-}
-
 /* 12.COMPLIMENTARY */
 /* 13.CONTENTINFO */
-
-footer {
-  text-align: center;
-}
-
 /* 14.GLOBAL OBJECTS */
 
 .clearfix { 

@@ -1,0 +1,95 @@
+/* 620 
+
+_____________________________________________________
+
+320 and Up boilerplate extension
+
+Author: Andy Clarke
+Version: 0.9b
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT/
+_____________________________________________________
+
+1.ROOT
+2.HEADINGS
+3.TYPOGRAPHY */
+
+p { margin-bottom: 1em; line-height: 1.75em; }
+
+/*
+4.LINKS
+5.FIGURES & IMAGES
+6.TABLES
+7.FORMS (See css/mylibs/forms.css)
+8.BANNER — header[role="banner"]
+9.NAVIGATION — nav[role="navigation"]
+10.CONTENT
+11.MAIN — div[role="main"]
+12.COMPLIMENTARY — div[role="complementary"]
+13.CONTENTINFO — footer[role="contentinfo"]
+14.GLOBAL OBJECTS
+15.VENDOR-SPECIFIC 
+16.TEMPLATE SPECIFICS
+17.MODERNIZR
+
+*/
+
+/* 1.ROOT */
+/* 2.HEADINGS */
+/* 3.TYPOGRAPHY */
+ul.highlights {
+  font-size: 1.1em;
+}
+
+/* 4.LINKS */
+/* 5.FIGURES & IMAGES */
+/* 6.TABLES */
+/* 7.FORMS (See css/mylibs/forms.css) */
+/* 8.BANNER */
+header { 
+  width: 620px;
+  margin: 0 auto;
+  text-align: left;
+ }
+
+/* 9.NAVIGATION */
+/* 10.CONTENT */
+.speech {
+  width: 390px;
+  float: left;
+  clear: none;
+  background: url(../img/arrow.png) 0px 100px no-repeat;
+}
+
+.bubble { 
+  margin-top: 42px;
+  width: 345px;
+  float: right;
+  text-align: left;
+  padding: 15px 20px;
+ }
+ 
+ .bubble h1 { text-align: left; font-size : 2.1em; /* 35 / 16 = 3 */ }
+  
+.logo { float: left; }
+
+.follow {
+  font-family: kulturista-web,serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  padding-left: 40px;
+  background: url(../img/tweet.png) 0px 10px no-repeat;
+  float: right;
+  width: 325px;
+  margin: 0px 5px;
+}
+
+/* 11.MAIN */
+/* 12.COMPLIMENTARY */
+/* 13.CONTENTINFO */
+/* 14.GLOBAL OBJECTS */
+/* 15.VENDOR-SPECIFIC */
+/* 16.TEMPLATE SPECIFICS */
+/* 17.MODERNIZR */
+
