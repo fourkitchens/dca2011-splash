@@ -201,10 +201,10 @@ header { text-align: center; }
   .bubble h1 { margin-bottom: 0px; font-size: 1.8em; }
   
   .bubble p {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.1em; /* approx 18 / 16 = 1.1 */
     line-height: 1.4em;
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
   
 
