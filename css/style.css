@@ -78,15 +78,11 @@ h5,
 h6 {
 font-family : "Helvetica Neue", Helvetica, Arial;
 font-weight : bold;
-text-align: center;
+text-align: left;
 }
 
 h1 { 
-font-family: gloriola-web,sans-serif;
-margin-bottom : .75em;
-font-size : 2.1em; /* 35 / 16 = 3 */
-line-height : 1.2;
-color: #d24813; }
+ }
 
 h2 { 
 margin-bottom : .75em;
@@ -129,7 +125,7 @@ ul.highlights {
   font-weight: 600;
   
   margin: 0;
-  color: #96c441;
+  color: #166cac;
   }
 
 b, 
@@ -171,7 +167,7 @@ color : rgb(0,0,0); }
 
 
 /* 8.BANNER */
-header { text-align: center; }
+header { text-align: left; }
   
 /* 9.NAVIGATION */
 /* 10.CONTENT */
@@ -185,9 +181,16 @@ header { text-align: center; }
   margin: 0 auto;
 }
 
+.arrow {
+  display: none;
+  visibility: hidden; 
+}
+
 .bubble { 
-  background-color: #fff;
-  color: #142835;  
+  background-color: #ebf6fa;
+  color: #666666;  
+  border: 5px solid #abcddc;
+  
   
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -195,16 +198,24 @@ header { text-align: center; }
   
   float: none;
   width: 280px;
-  margin: 8px auto 15px auto;
+  margin: 8px auto 10px auto;
   padding: 15px;
 }
-  .bubble h1 { margin-bottom: 0px; font-size: 1.8em; }
+  .bubble p.title { 
+    margin-bottom: 4px; 
+    font-size: 1.8em;
+    font-family: gloriola-web,sans-serif;
+    font-size : 2.1em; /* 35 / 16 = 3 */
+    line-height : 1.2;
+    font-weight: bold;
+    color: #d24813;
+   }
   
-  .bubble p {
+  .bubble h1 {
     font-weight: 600;
     font-size: 1.1em; /* approx 18 / 16 = 1.1 */
     line-height: 1.4em;
-    margin-bottom: 0;
+    margin-bottom: 4px;
   }
   
 
@@ -217,8 +228,18 @@ header { text-align: center; }
   background: url(../img/tweet.png) 0px 6px no-repeat;
   width: 300px;
   margin: 0 auto;
+  text-align: center;
 }  
 
+
+.launchdate { 
+  text-align: center;
+  margin-top: 15px;
+  
+  color: #c5d4ef;
+  font-size: 1.8em;
+  font-family: kulturista-web,serif;
+}
 
 figure {
   width: 220px;

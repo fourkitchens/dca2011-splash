@@ -49,7 +49,6 @@ ul.highlights {
 header { 
   width: 620px;
   margin: 0 auto;
-  text-align: left;
  }
 
 /* 9.NAVIGATION */
@@ -58,7 +57,19 @@ header {
   width: 390px;
   float: left;
   clear: none;
-  background: url(../img/arrow.png) 0px 100px no-repeat;
+  position: relative;
+}
+
+.arrow {
+  display: block;
+  visibility: visible;
+    
+  position: absolute;
+  
+  top: 120px;
+  width: 52px;
+  height: 30px;
+  background: url(../img/arrow.png) 0px 0px no-repeat;
 }
 
 .bubble { 
@@ -68,10 +79,13 @@ header {
   text-align: left;
   padding: 15px 20px;
  }
- 
- .bubble h1 { text-align: left; font-size : 2.1em; /* 35 / 16 = 3 */ }
   
 .logo { float: left; }
+
+
+.launchdate { 
+  margin-top: 40px;
+}
 
 .follow {
   font-family: kulturista-web,serif;
