@@ -86,3 +86,34 @@
 }
 
 */
+
+#mc-embedded-subscribe-form label {display: block; text-align: center; position: relative; top: -.3em; }
+#mce-EMAIL,
+#mc-embedded-subscribe {display: block; width: 90%; margin: 0 auto; font-size: 1.5em; font-family: gloriola-web, sans-serif; }
+
+#mce-EMAIL { text-align: center; padding: .25em .15em; border: 5px solid #ABCDDC; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; color: #166CAC; }
+#mc-embedded-subscribe {width: 260px; margin-top: 16px; padding-top: 6px; color: #222; text-shadow: 1px 1px 1px rgba(255,255,255,0.5); border-radius: .6em; border: 0; /* border: 8px solid #222; */ background-image: linear-gradient(bottom, rgb(22,107,172) 1%, rgb(54,170,220) 78%);
+  background-image: linear-gradient(bottom, rgb(237,149,16) 1%, rgb(247,184,48) 79%);
+  background-image: -o-linear-gradient(bottom, rgb(237,149,16) 1%, rgb(247,184,48) 79%);
+  background-image: -moz-linear-gradient(bottom, rgb(237,149,16) 1%, rgb(247,184,48) 79%);
+  background-image: -webkit-linear-gradient(bottom, rgb(237,149,16) 1%, rgb(247,184,48) 79%);
+  background-image: -ms-linear-gradient(bottom, rgb(237,149,16) 1%, rgb(247,184,48) 79%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.01, rgb(237,149,16)),
+    color-stop(0.79, rgb(247,184,48))
+  );
+  cursor: pointer;
+}
+.signup-form {
+  margin-top: 60px;
+}
+
+/*
+orange - ed9310
+blue   - 166cac
+green  - 96c441
+*/
