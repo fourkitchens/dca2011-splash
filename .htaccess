@@ -7,3 +7,5 @@
   RewriteCond %{HTTP_HOST} ^www.drupalcampaustin\.org$ [NC]
   RewriteRule ^(.*)$ http://drupalcampaustin.org/$1 [L,R=301]
 </IfModule>
+
+DirectoryIndex index.html index.php
