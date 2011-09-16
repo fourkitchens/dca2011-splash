@@ -105,6 +105,8 @@ header,
   margin: 0px 5px;
 }
 
+canvas {position: absolute; width: 100%; left: 0; bottom: 0; height: 120px; }
+
 /* 11.MAIN */
 /* 12.COMPLIMENTARY */
 /* 13.CONTENTINFO */

@@ -1,22 +1,32 @@
-var Cloud = function(opts) {
+var Daywalker = function(opts) {
   this.init(opts);
 };
 
-Cloud.prototype = {
+Daywalker.prototype = {
 
   init: function(opts) {
     var self = this;
 
+    dwTypes = new Array();
+    dwTypes[0] = 'truck';
+    dwTypes[1] = 'bicycle';
+    dwTypes[2] = 'pennyfarthing';
+    dwTypes[3] = 'motorcycle';
+    dwTypes[4] = 'unicycle';
+    dwTypes[5] = 'jogger';
+    dwTypes[6] = 'segway';
+    dwTypes[7] = 'horse';
+    dwTypes[8] = 'tractor';
+    dwTypes[9] = 'cannon';
+
     this.image = new Image();
-    this.image.src = Math.round(Math.random() * 2)
-      ? "people.png"
-      : "people.png";
+    this.image.src = '/img/'+ dwTypes[Math.round(Math.random() * 9)] +'.png';
 
     this.image.onload = function() {
-      self.width = Math.round(self.image.width * Math.random());
+      self.width = Math.round(self.image.width);
       self.height = Math.round(self.width * (self.image.height / self.image.width));
 
-      self.rate = Math.ceil(self.height * .3 / 10);
+      self.rate = Math.ceil(self.height * .3 / 12);
     };
 
     this.rate = Math.round(Math.random() + 1 * 4);
@@ -30,7 +40,7 @@ Cloud.prototype = {
 (function($, undefined) {
 
 $(function() {
-  var canvas = $("<canvas />").addClass("clouds").prependTo("body"),
+  var canvas = $("<canvas />").addClass("daywalkers").prependTo("body"),
       WIDTH = canvas.width(),
       HEIGHT = canvas.height();
 
@@ -41,16 +51,16 @@ $(function() {
   }
 
   // Have to set the width/height attrs of the canvas
-  // element or images won't know how big to be!  CrAzY ClOuDz!!
+  // element or images won't know how big to be!  CrAzY DaYwalKeRz!!
   canvas.attr("width", WIDTH).attr("height", HEIGHT);
 
-  // Create some clouds!  Fluffy yay happy wow!  Cumulonimbus!
-  var clouds = [];
+  // Create some daywalkers!!
+  var daywalkers = [];
   for (var x = 0; x < 5; x++) {
-    var cloud = new Cloud();
-    cloud.x = Math.round(WIDTH / 2 * Math.random());
-    cloud.y = Math.round(HEIGHT / 2 * Math.random());
-    clouds.push(cloud);
+    var daywalker = new Daywalker();
+    daywalker.x = Math.round(WIDTH / 2 * Math.random());
+    daywalker.y = Math.round(HEIGHT / 2 * Math.random());
+    daywalkers.push(daywalker);
   };
 
   // Start the rendering loopty loop.
@@ -58,17 +68,17 @@ $(function() {
     var context = canvas.get(0).getContext("2d");
     context.clearRect(0, 0, WIDTH, HEIGHT);
 
-    for (var x = 0; x < clouds.length; x++) {
-      clouds[x].x += clouds[x].rate;
-      context.drawImage(clouds[x].image, clouds[x].x, clouds[x].y, clouds[x].width, clouds[x].height);
+    for (var x = 0; x < daywalkers.length; x++) {
+      daywalkers[x].x += daywalkers[x].rate;
+      context.drawImage(daywalkers[x].image, daywalkers[x].x, daywalkers[x].y, daywalkers[x].width, daywalkers[x].height);
 
-      // That old cloud just flew off the screen!  Like WTF?!
-      // Let's make a new cloud!  Woo!!  Yay!!!!!!
-      if (clouds[x].x > WIDTH) {
-        var cloud = new Cloud();
-        cloud.x = -cloud.image.width;
-        cloud.y = Math.round(HEIGHT / 2 * Math.random());
-        clouds[x] = cloud;
+      // That old daywalker just flew off the screen!  Like WTF?!
+      // Let's make a new daywalker!  Woo!!  Yay!!!!!!
+      if (daywalkers[x].x > WIDTH) {
+        var daywalker = new Daywalker();
+        daywalker.x = -daywalker.image.width;
+        daywalker.y = Math.round(HEIGHT / 2 * Math.random());
+        daywalkers[x] = daywalker;
       }
     }
   }, 40);
