@@ -37,6 +37,7 @@ p { margin-bottom: 1em; line-height: 1.75em; }
 /* 1.ROOT */
 /* 2.HEADINGS */
 /* 3.TYPOGRAPHY */
+
 ul.highlights {
   font-size: 1.1em;
 }
@@ -46,13 +47,17 @@ ul.highlights {
 /* 6.TABLES */
 /* 7.FORMS (See css/mylibs/forms.css) */
 /* 8.BANNER */
-header { 
+
+header,
+.launchdate,
+.signup-form {
   width: 620px;
   margin: 0 auto;
  }
 
 /* 9.NAVIGATION */
 /* 10.CONTENT */
+
 .speech {
   width: 390px;
   float: left;
@@ -82,7 +87,6 @@ header {
   
 .logo { float: left; }
 
-
 .launchdate { 
   margin-top: 40px;
   font-size: 1.8em;
@@ -107,4 +111,3 @@ header {
 /* 15.VENDOR-SPECIFIC */
 /* 16.TEMPLATE SPECIFICS */
 /* 17.MODERNIZR */
-

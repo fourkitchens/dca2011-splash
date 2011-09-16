@@ -5,7 +5,7 @@
 <!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
 <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 
-<!-- 
+<!--
 Howdy, wandering web developer :)
 -->
 
@@ -23,6 +23,8 @@ Howdy, wandering web developer :)
 
 <!-- For all browsers -->
 <link rel="stylesheet" media="screen" href="css/style.css?v=1">
+<!-- For MailChimp signup form -->
+<link rel="stylesheet" media="screen" href="css/signup-form.css?v=1">
 <!-- For progressively larger displays -->
 <link rel="stylesheet" media="only screen and (min-width: 620px)" href="css/620.css?v=1">
 
@@ -56,13 +58,13 @@ Howdy, wandering web developer :)
 <body class="clearfix">
 
 <header role="banner" class="clearfix">
-  
+
   <figure class="logo">
     <script type="text/javascript">
     document.write(getImageTag());
-    </script>  
+    </script>
   </figure>
-  
+
   <div class="speech">
     <span class="arrow"></span>
     <div class="bubble">
@@ -78,10 +80,22 @@ Howdy, wandering web developer :)
       <p><span class="tweet">Follow us</span> <a href="http://twitter.com/drupalatx" title="link to the twitter feed of drupal camp asutin">@DrupalATX</a></p>
     </div>
   </div>
-  
+
 </header>
 
-<section class="launchdate clearfix"><p>Site coming in September</p></section>
+<section class="launchdate clearfix"><p>Registration opens in October</p></section>
+
+<!-- MailChimp signup form -->
+<section class="signup-form clearfix">
+  <p>Be the first to know!</p>
+  <div id="mc_embed_signup">
+    <form action="http://fourkitchens.us2.list-manage2.com/subscribe/post?u=a69fca90d904cf3933c9776c3&amp;id=467af0be3a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <label for="mce-EMAIL">Email me when the site is up!</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </form>
+  </div>
+</section>
 
 <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>

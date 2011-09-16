@@ -26,11 +26,11 @@ _____________________________________________________
 12.COMPLIMENTARY — div[role="complementary"]
 13.CONTENTINFO — footer[role="contentinfo"]
 14.GLOBAL OBJECTS
-15.VENDOR-SPECIFIC 
+15.VENDOR-SPECIFIC
 16.TEMPLATE SPECIFICS
 17.MODERNIZR
 
-COLOURS 
+COLOURS
 
 */
 
@@ -43,98 +43,111 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-margin : 0;
-padding : 0;
-border : 0;
-font-size : 100%;
-font : inherit;
-vertical-align : baseline; }
+  margin : 0;
+  padding : 0;
+  border : 0;
+  font-size : 100%;
+  font : inherit;
+  vertical-align : baseline;
+}
 
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-display : block; }
+  display : block;
+}
 
 /* 1.ROOT */
-html { overflow-y : scroll; }
+html {
+  overflow-y : scroll;
+}
 
-body { 
-margin : 0 auto;
-padding : 20px;
-font : 100%/1.4 Arial, Helvetica, sans-serif;
-color : rgb(255,255,255); 
-background : #142835 url('../img/main-bg.jpg') center 1px no-repeat; }
+body {
+  margin : 0 auto;
+  padding : 20px;
+  font : 100%/1.4 Arial, Helvetica, sans-serif;
+  color : rgb(255,255,255);
+  background : #142835 url('../img/main-bg.jpg') center 1px no-repeat;
+}
 
 /* 2.HEADINGS */
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-font-family : "Helvetica Neue", Helvetica, Arial;
-font-weight : bold;
-text-align: left;
+  font-family : "Helvetica Neue", Helvetica, Arial;
+  font-weight : bold;
+  text-align: left;
 }
 
-h1 { 
- }
+h1 {
+}
 
-h2 { 
-margin-bottom : .75em;
-font-size : 2em; /* 32 / 16 = 2 */
-line-height : 1.3; }
+h2 {
+  margin-bottom : .75em;
+  font-size : 2em; /* 32 / 16 = 2 */
+  line-height : 1.3;
+}
 
-h3 { 
-margin-bottom : 1em;
-font-size : 1.25em; /* 20 / 16 = 1.25 */
-line-height : 1.25; }
+h3 {
+  margin-bottom : 1em;
+  font-size : 1.25em; /* 20 / 16 = 1.25 */
+  line-height : 1.25;
+}
 
-h4 { 
-margin-bottom : 1.25em;
-font-size : 1em; /* 16 / 16 = 1 */ }
+h4 {
+  margin-bottom : 1.25em;
+  font-size : 1em; /* 16 / 16 = 1 */
+}
 
 /* 3.TYPOGRAPHY */
 
-p, 
-ol, 
-ul, 
-dl, 
-address {  
-font-size : 1em; /* 16 / 16 = 1 */ }
+p,
+ol,
+ul,
+dl,
+address {
+  font-size : 1em; /* 16 / 16 = 1 */
+}
 
-ul { 
-list-style-type : disc; }
+ul {
+  list-style-type : disc;
+}
 
-ol { 
-list-style-type : decimal; }
+ol {
+  list-style-type : decimal;
+}
 
-li ul, 
-li ol { 
-margin : 0;
-font-size : 1em; /* 16 / 16 = 1 */ }
+li ul,
+li ol {
+  margin : 0;
+  font-size : 1em; /* 16 / 16 = 1 */
+}
 
-ul.highlights { 
+ul.highlights {
   list-style: none;
   font-family: kulturista-web,serif;
   font-style: normal;
   font-weight: 600;
-  
   margin: 0;
   color: #166cac;
-  }
+}
 
-b, 
-strong	{ 
-font-weight : bold; }
+b,
+strong {
+  font-weight : bold;
+}
 
-i, 
-em { 
-font-style : italic; }
+i,
+em {
+  font-style : italic;
+}
 
 /* 3.5.WEBFONTS */
 
@@ -149,26 +162,31 @@ font-weight: 600;
 
 /* 4.LINKS */
 
-a, 
+a,
 a:visited {
-outline : none;
-color : #ed9310;
-text-decoration : none; }
- 
-a:hover { 
-outline : none;
-color : #fff; 
-text-decoration : underline; }
- 
-a:active, 
-a:focus { 
-outline : none;
-color : rgb(0,0,0); }
+  outline : none;
+  color : #ed9310;
+  text-decoration : none;
+}
+
+a:hover {
+  outline : none;
+  color : #fff;
+  text-decoration : underline;
+}
+
+a:active,
+a:focus {
+  outline : none;
+  color : rgb(0,0,0);
+}
 
 
 /* 8.BANNER */
-header { text-align: left; }
-  
+header {
+  text-align: left;
+}
+
 /* 9.NAVIGATION */
 /* 10.CONTENT */
 
@@ -183,41 +201,38 @@ header { text-align: left; }
 
 .arrow {
   display: none;
-  visibility: hidden; 
+  visibility: hidden;
 }
 
-.bubble { 
+.bubble {
   background-color: #ebf6fa;
-  color: #666666;  
+  color: #666666;
   border: 5px solid #abcddc;
-  
-  
+
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
-  
+
   float: none;
   width: 280px;
   margin: 8px auto 10px auto;
   padding: 15px;
 }
-  .bubble p.title { 
-    margin-bottom: 4px; 
+  .bubble p.title {
+    margin-bottom: 4px;
     font-size: 1.8em;
     font-family: gloriola-web,sans-serif;
     font-size : 2.1em; /* 35 / 16 = 3 */
     line-height : 1.2;
     font-weight: bold;
     color: #d24813;
-   }
-  
+  }
   .bubble h1 {
     font-weight: 600;
     font-size: 1.1em; /* approx 18 / 16 = 1.1 */
     line-height: 1.4em;
     margin-bottom: 4px;
   }
-  
 
 .follow {
   font-family: kulturista-web,serif;
@@ -229,13 +244,18 @@ header { text-align: left; }
   width: 300px;
   margin: 0 auto;
   text-align: center;
-}  
+}
 
-
-.launchdate { 
+.launchdate {
   text-align: center;
   margin-top: 15px;
-  
+  color: #c5d4ef;
+  font-size: 1.4em;
+  font-family: kulturista-web,serif;
+}
+
+.signup-form {
+  margin-top: 15px;
   color: #c5d4ef;
   font-size: 1.4em;
   font-family: kulturista-web,serif;
@@ -244,100 +264,107 @@ header { text-align: left; }
 figure {
   width: 220px;
   margin: 0 auto;
-  }
+}
 
 /* 11.MAIN */
 /* 12.COMPLIMENTARY */
 /* 13.CONTENTINFO */
 /* 14.GLOBAL OBJECTS */
 
-.clearfix { 
-zoom : 1; }
+.clearfix {
+  zoom: 1;
+}
 
-.clearfix:before, 
-.clearfix:after { 
-content : "\0020"; 
-display : block; 
-height : 0; 
-overflow : hidden; }
+.clearfix:before,
+.clearfix:after {
+  content : "\0020";
+  display : block;
+  height : 0;
+  overflow : hidden;
+}
 
-.clearfix:after { 
-clear : both; }
+.clearfix:after {
+  clear : both;
+}
 
 /* 15.VENDOR-SPECIFIC */
 
 body {
--webkit-text-size-adjust : 100%; 
+-webkit-text-size-adjust : 100%;
 -ms-text-size-adjust : 100%; }
 
-a:link { 
+a:link {
 -webkit-tap-highlight-color : rgb(52,158,219); }
 
-::-webkit-selection { 
-background : rgb(23,119,175); 
-color : rgb(250,250,250); 
+::-webkit-selection {
+background : rgb(23,119,175);
+color : rgb(250,250,250);
 text-shadow : none; }
 
-::-moz-selection { 
-background : rgb(23,119,175); 
-color : rgb(250,250,250); 
+::-moz-selection {
+background : rgb(23,119,175);
+color : rgb(250,250,250);
 text-shadow : none; }
 
-::selection { 
-background : rgb(23,119,175); 
-color : rgb(250,250,250); 
+::selection {
+background : rgb(23,119,175);
+color : rgb(250,250,250);
 text-shadow : none; }
 
 /* input[type=search] {
 -webkit-appearance : none; }
 
-input[type="search"]::-webkit-search-decoration, 
+input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
 display : none; } */
 
 ::-webkit-input-placeholder {
-padding : 10px;
-font-size : .875em; 
-line-height : 1.4; }
+  padding : 10px;
+  font-size : .875em;
+  line-height : 1.4;
+}
 
-input:-moz-placeholder { 
-padding : 10px;
-font-size : .875em; 
-line-height : 1.4; }
+input:-moz-placeholder {
+  padding : 10px;
+  font-size : .875em;
+  line-height : 1.4;
+}
 
 .ie7 img,
-.iem7 img { 
--ms-interpolation-mode : bicubic; }
+.iem7 img {
+  -ms-interpolation-mode : bicubic;
+}
 
 img { max-width: 100%; }
 
 div,
 input,
-textarea  { 
--webkit-box-sizing : border-box;
--moz-box-sizing : border-box;
--o-box-sizing : border-box;
-box-sizing : border-box; }
+textarea  {
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing : border-box;
+  -o-box-sizing : border-box;
+  box-sizing : border-box;
+}
 
 /* Non-semantic helper classes */
 
 /* Image replacement */
-.ir { 
-display : block; 
-text-indent : -999em; 
-overflow : hidden; 
-background-repeat : no-repeat; 
-text-align : left; 
-direction : ltr; }
-
+.ir {
+  display : block;
+  text-indent : -999em;
+  overflow : hidden;
+  background-repeat : no-repeat;
+  text-align : left;
+  direction : ltr;
+}
 
 /* Allow an element to be focusable via keyboard  */
 .visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus { 
-position : static;
-clip : auto; 
-overflow : visible;
-height : auto; 
-margin : 0;   
-width : auto; }
-
+.visuallyhidden.focusable:focus {
+  position : static;
+  clip : auto;
+  overflow : visible;
+  height : auto;
+  margin : 0;
+  width : auto;
+}
