@@ -1,0 +1,13 @@
+canvas.clouds {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  height: 100px;
+  width: 100%;
+}
+
+div.van {
+  width: 150px;
+  height: 80px;
+  background: transparent url(../daywalkers.png) 0px 0px;
+}
