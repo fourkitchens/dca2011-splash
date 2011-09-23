@@ -248,16 +248,18 @@ header {
 
 .launchdate {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 30px;
   color: #c5d4ef;
-  font-size: 1.4em;
+  font-size: 1.6em;
+  line-height: 1.5em;
   font-family: kulturista-web,serif;
 }
 
 .signup-form {
-  margin-top: 15px;
+  margin-top: 30px;
   color: #c5d4ef;
   font-size: 1.4em;
+  line-height: 1.5em;
   font-family: kulturista-web,serif;
 }
 

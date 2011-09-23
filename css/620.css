@@ -12,11 +12,7 @@ _____________________________________________________
 
 1.ROOT
 2.HEADINGS
-3.TYPOGRAPHY */
-
-p { margin-bottom: 1em; line-height: 1.75em; }
-
-/*
+3.TYPOGRAPHY
 4.LINKS
 5.FIGURES & IMAGES
 6.TABLES
@@ -84,13 +80,21 @@ header,
   float: right;
   text-align: left;
   padding: 15px 20px;
- }
+}
   
-.logo { float: left; }
+.logo {
+  float: left;
+}
 
 .launchdate { 
   margin-top: 40px;
-  font-size: 1.8em;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.signup-form {
+  font-size: 1.6em;
+  margin-top: 40px;
 }
 
 .follow {
@@ -105,7 +109,7 @@ header,
   margin: 0px 5px;
 }
 
-canvas {position: absolute; width: 100%; left: 0; bottom: 0; height: 120px; }
+canvas { position: absolute; width: 100%; left: 0; bottom: 0; height: 120px; }
 
 /* 11.MAIN */
 /* 12.COMPLIMENTARY */
