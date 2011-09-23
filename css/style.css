@@ -213,8 +213,7 @@ header {
   -moz-border-radius: 12px;
   border-radius: 12px;
 
-  float: none;
-  width: 280px;
+  width: 280px; /* real width: 320px */
   margin: 8px auto 10px auto;
   padding: 15px;
 }
@@ -238,10 +237,10 @@ header {
   font-family: kulturista-web,serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.2em;
-  padding-left: 40px;
+  font-size: 1.3em;
+  padding-left: 30px;
   background: url(../img/tweet.png) 0px 6px no-repeat;
-  width: 300px;
+  width: 290px; /* real width: 320px */
   margin: 0 auto;
   text-align: center;
 }
