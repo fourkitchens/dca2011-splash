@@ -86,6 +86,17 @@ header,
   float: left;
 }
 
+.follow {
+  font-family: kulturista-web,serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  background: url(../img/tweet.png) 0px 10px no-repeat;
+  float: right;
+  width: 325px;
+  margin: 0px 5px;
+}
+
 .launchdate { 
   margin-top: 40px;
   font-size: 2em;
@@ -95,18 +106,6 @@ header,
 .signup-form {
   font-size: 1.6em;
   margin-top: 40px;
-}
-
-.follow {
-  font-family: kulturista-web,serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5em;
-  padding-left: 40px;
-  background: url(../img/tweet.png) 0px 10px no-repeat;
-  float: right;
-  width: 325px;
-  margin: 0px 5px;
 }
 
 canvas { position: absolute; width: 100%; left: 0; bottom: 0; height: 120px; }
