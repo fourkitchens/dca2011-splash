@@ -1,7 +1,6 @@
-/* 620 
+/* Sizes: 620 and up
 
 _____________________________________________________
-
 320 and Up boilerplate extension
 
 Author: Andy Clarke
@@ -9,25 +8,6 @@ Version: 0.9b
 URL: http://stuffandnonsense.co.uk/projects/320andup/
 License: http://creativecommons.org/licenses/MIT/
 _____________________________________________________
-
-1.ROOT
-2.HEADINGS
-3.TYPOGRAPHY
-4.LINKS
-5.FIGURES & IMAGES
-6.TABLES
-7.FORMS (See css/mylibs/forms.css)
-8.BANNER — header[role="banner"]
-9.NAVIGATION — nav[role="navigation"]
-10.CONTENT
-11.MAIN — div[role="main"]
-12.COMPLIMENTARY — div[role="complementary"]
-13.CONTENTINFO — footer[role="contentinfo"]
-14.GLOBAL OBJECTS
-15.VENDOR-SPECIFIC 
-16.TEMPLATE SPECIFICS
-17.MODERNIZR
-
 */
 
 /* 1.ROOT */
@@ -46,7 +26,8 @@ ul.highlights {
 
 header,
 .launchdate,
-.signup-form {
+.signup-form,
+.sponsors {
   width: 620px;
   margin-left: auto;
   margin-right: auto;
@@ -65,23 +46,21 @@ header,
 .arrow {
   display: block;
   visibility: visible;
-    
   position: absolute;
-  
   top: 120px;
   width: 52px;
   height: 30px;
   background: url(../img/arrow.png) 0px 0px no-repeat;
 }
 
-.bubble { 
+.bubble {
   margin-top: 42px;
   width: 345px;
   float: right;
   text-align: left;
   padding: 15px 20px;
 }
-  
+
 .logo {
   float: left;
 }
@@ -98,18 +77,52 @@ header,
   margin: 0px 5px;
 }
 
-.launchdate { 
+.launchdate {
   margin-top: 40px;
   font-size: 2em;
   line-height: 1.5em;
 }
 
 .signup-form {
+  margin-top: 60px;
+  margin-bottom: 60px;
   font-size: 1.6em;
-  margin-top: 40px;
 }
 
-canvas { position: absolute; width: 100%; left: 0; bottom: 0; height: 120px; }
+.sponsors {
+}
+  .sponsors h2 {
+  }
+  .sponsors h3 {
+  }
+
+  .sponsors div {
+  }
+  .sponsors .lonestar {
+    clear: none;
+    float: left;
+    width: 140px;
+    margin-right: 20px;
+  }
+  .sponsors .longhorns {
+    clear: none;
+    float: left;
+    width: 460px;
+  }
+  .sponsors .armadillos {
+  }
+  .sponsors .bats {
+  }
+
+/*
+canvas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+}
+*/
 
 /* 11.MAIN */
 /* 12.COMPLIMENTARY */
